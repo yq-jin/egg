@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--page 1 : hello name-->
+    <section class="page page-hello" id="page-hello">
+        <div class="hello-card">
+            <h1>hello, i'm catherine</h1>
+        </div>
+        <div class="scroll-hint">swipe down</div>
+    </section>
+
+    <!--page 2 : tabs-->
+    <section class="page page-tabs" id="page-tabs">
+        <ul class="tabs">
+            <li class="tab" data-tab="about" style="--i:about"><span>1</span>about me</li>
+            <li class="tab" data-tab="skills" style="--i:skills"><span>2</span>skills</li>
+            <li class="tab" data-tab="projects" style="--i:projects"><span>3</span>projects</li>
+
+        </ul>
+    </section>
+
+    <!--overlay that opens with a whoosh when a tab is clicked-->
+    <div class="tab-overlay" id="tab-overlay" aria-hidden="true">
+        <button class="tab-overlay-close" id="tab-overlay-close" aria-label="close">x</button>
+        <div class="tab-overlay-content" id="tab-overlay-content"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
